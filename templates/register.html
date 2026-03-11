@@ -2,28 +2,91 @@
 <html>
 <head>
 <title>Student Registration</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    width:320px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#4facfe;
+    border:none;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#008cff;
+}
+
+a{
+    display:block;
+    text-align:center;
+    margin-top:10px;
+    text-decoration:none;
+    color:#4facfe;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h2>Register</h2>
+<div class="container">
+
+<h2>Student Registration</h2>
 
 <form method="POST">
 
-Name<br>
-<input type="text" name="name"><br><br>
+<label>Name</label>
+<input type="text" name="name" required>
 
-Email<br>
-<input type="email" name="email"><br><br>
+<label>Email</label>
+<input type="email" name="email" required>
 
-Password<br>
-<input type="password" name="password"><br><br>
+<label>Password</label>
+<input type="password" name="password" required>
 
 <button type="submit">Register</button>
 
 </form>
 
-<a href="/login">Login</a>
+<a href="/login">Already have account? Login</a>
+
+</div>
 
 </body>
 </html>
