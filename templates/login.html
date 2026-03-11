@@ -2,9 +2,74 @@
 <html>
 <head>
 <title>Login</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg,#74ebd5,#9face6);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    background:white;
+    padding:35px;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#4CAF50;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#45a049;
+}
+
+a{
+    display:block;
+    margin-top:15px;
+    text-decoration:none;
+    color:#333;
+}
+
+a:hover{
+    color:#4CAF50;
+}
+
+</style>
+
 </head>
 
 <body>
+
+<div class="login-box">
 
 <h2>Student Login</h2>
 
@@ -21,6 +86,8 @@ Password<br>
 </form>
 
 <a href="/register">Register</a>
+
+</div>
 
 </body>
 </html>
